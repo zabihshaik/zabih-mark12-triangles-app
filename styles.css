@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --primary-color: aquamarine;
+    --primary-dark:#ff0054;
+}
+body{
+    background-color: var(--primary-color);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-size:1.7rem;
+}
+
+:root {
+	--head-font: 'Lato', sans-serif;
+	--body-font: 'Lato', sans-serif;
+
+	--pink0: #ff9296;
+	--pink1: #ff9fa3;
+	--pink2: #f7e0e6;
+	--pink3: #faf0f2;
+	--blue: #78d8db;
+	--grey: #949391;
+	--yellow: #d9af39;
+	--back: #f5f2e9;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-size: contain;
+	color: white;
+	font-family: var(--body-font);
+	text-align: center;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: var(--blue);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+}
+
+.nav-head {
+	font-family: var(--head-font);
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav-pills {
+	display: flex;
+	min-width: 40%;
+	justify-content: space-between;
+}
+.nav-pills a {
+	color: white;
+	font-size: 17px;
+	text-decoration: none;
+	border: 2px solid var(--blue);
+}
+
+.nav-pills a:hover {
+	background-color: var(--pink1);
+	border-color: var(--pink1);
+	border-radius: 6px;
+}
+
+.active-link {
+    background-color: var(--pink1);
+	border-color: var(--pink1);
+	border-radius: 6px;
+}
+
+.header-home {
+	background-color: var(--blue);
+	padding: 2rem;
+}
+
+.header-home h1 {
+	color: white;
+	font-family: var(--head-font);
+	font-size: 32px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.container {
+	padding: 2rem 0.7rem;
+}
+
+.container-inside {
+	background-color: #f7e0e6dc;
+	display: block;
+	max-width: 500px;
+	padding: 2rem 1rem;
+	border-radius: 2rem;
+	margin: 2rem auto;
+}
+
+.container-inside h1 {
+	color: var(--pink0);
+	font-family: var(--head-font);
+	font-weight: 800;
+	font-size: 27px;
+}
+
+.container-inside a {
+	display: block;
+	background-color: var(--pink1);
+	color: white;
+	font-family: var(--body-font);
+	font-weight: 800;
+	text-decoration: none;
+	max-width: 270px;
+	padding: 0.8rem 2rem;
+	border-radius: 2rem;
+	margin: 1.5rem auto 0.5rem auto;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.container-inside a:hover {
+	background-color: var(--blue);
+}
+
+.formula {
+	color: var(--pink0);
+	font-size: 20px;
+	font-weight: bold;
+	max-width: 80%;
+	padding: 1rem 1.5rem;
+	border: 3px solid var(--pink1);
+	border-radius: 1rem;
+	margin: 1.5rem auto 1rem auto;
+}
+
+.tri-condition span {
+	display: block;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.questions {
+	color: var(--grey);
+	font-size: 17px;
+	text-align: left;
+	padding-top: 2rem;
+}
+
+.questions p {
+	font-weight: bold;
+	padding-bottom: 0.3rem;
+}
+
+.label-input {
+	display: block;
+	color: var(--pink0);
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-top: 1.5rem;
+	padding-bottom: 0.3rem;
+	margin: auto;
+}
+
+.label-quiz {
+	display: block;
+	padding-left: 0.3rem;
+}
+
+input {
+	display: block;
+	background-color: var(--pink3);
+	color: var(--pink0);
+	font-family: var(--body-font);
+	font-size: 17px;
+	max-width: 75%;
+	padding: 0.5rem 1.5rem;
+	border: 2px solid var(--pink1);
+	border-radius: 0.5rem;
+	margin: auto;
+	outline: none;
+}
+
+.input-quiz {
+	display: inline;
+}
+
+.result {
+	display: none;
+	color: var(--back);
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0.1rem 1rem;
+	border-radius: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.div-message {
+	display: none;
+	background-color: var(--pink1);
+	color: white;
+	font-weight: bold;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-top: 2rem;
+}
+
+#sum-of-angles {
+	display: none;
+    padding-bottom: 0.5rem;
+}
+
+.message {
+	font-family: var(--head-font);
+	font-size: 20px;
+}
+
+button {
+	background-color: var(--pink1);
+	color: white;
+	font-family: var(--body-font);
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	margin-top: 2rem;
+	transition: 0.5s ease;
+}
+button:hover {
+	background-color: var(--blue);
+}
+
+footer {
+	background-color: var(--blue);
+	padding: 1.5rem 2rem 0.5rem 2rem;
+}
+
+
+svg {
+	fill: white;
+	width: 35px;
+	height: 35px;
+	padding: 0.3rem 0.3rem;
+	border-radius: 0.3rem;
+	margin: 0.3rem;
+	transition: 1s ease;
+}
+
+svg:hover {
+	background-color: var(--pink1);
+}
+.nav-active {
+	transform: translateX(0%);
+	display: flex;
+}

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuse</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-home">
+        <h1>FUN WITH TRIANGLES APP</h1>
+    </header>
+
+    <nav>
+        <div class="nav-head">Fun With Triangles</div>
+
+        <div class="nav-pills">
+            <a href="/index.html" class="nav-links">Home</a>
+            <a href="/istriangle.html" class="nav-links">Is Triangle?</a>
+            <a href="/quiz.html" class="nav-links">Triangle Quiz</a>
+            <a href="/hypotenuse.html" class="nav-links active-link">Find Hypotenuse</a>
+            <a href="/area.html" class="nav-links">Find Area</a>
+        </div>
+
+    </nav>
+
+    <h1>Calculate Hypotenuse</h1>
+    <label>a=</label>
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
+    <label>b=</label>
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
+    
+    <button id="hypotenuse-btn">Calculate Hypotenuse</button>
+    <div id="output"></div>
+    <footer>
+        
+    </footer>
+    
+<script src="hypotenuse.js"></script>
+</body>
+</html>
